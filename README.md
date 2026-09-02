@@ -10,11 +10,45 @@
 
 ## Business Requirements
 
-* Describe your business requirements
+School leadership has mandated that their Student Support Group investigates the factors that put student's at risk of poor perforance in mathematics.
+
+ * Identify the academic, behavioural and support related factors that are associated with a student's final performance in mathematics, so that the school can identify the student's that may need additional support and to further learn how to make intervention decisions.
+
+ * The analysis will investigate whether study time, previous academic failure and absences are associated factors with a student's final mathematics outcome. 
+ 
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them) 
+H1 - Study behaviours affect final performance
+
+* Students who spend more time studying tend to achieve a higher final mathematics grade.
+
+Validation:
+
+* Boxplots comparing study time (studytime) with the final grades (G3)
+* Spearman Rank correlation test
+* Statistical significance assessed using p < 0.05 
+
+H2 - Prior academic difficulty and final performance
+
+* Students with prior fails tend to be achieving lower final mathematics grades thans students who do not.
+
+Validation:
+
+* boxplot comparing the previous failures with fial grade (G3)
+* Mann-Whitney U test (maybe backed up by cliff's delta)
+* Statistical significance assessed using p < 0.05 
+
+H3 - Attendance impacts final performance
+
+* Students with more absences tend to acheive lower grades
+
+Validation:
+
+* Scatterplot comparing total absences (absences) with the final grade (G3)
+* Spearman Rank correlation test
+* Statistical significance assessed using p < 0.05
+
 
 ## Project Plan
 
