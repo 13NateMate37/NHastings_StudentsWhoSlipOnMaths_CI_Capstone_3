@@ -58,7 +58,7 @@ def InitialInspect(data_frame):
 
 
 # Cache for streamlit
-@st.cache_data
-def loadDataframe():
-    dataframe = pd.read_csv("Dataset/Cleaned/earthquake_1995-2023_cleaned.csv")
-    return dataframe
+# @st.cache_data
+# def loadDataframe():
+#     dataframe = pd.read_csv("Dataset/Cleaned/")
+#     return dataframe
