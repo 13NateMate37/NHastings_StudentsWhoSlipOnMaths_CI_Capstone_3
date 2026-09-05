@@ -1,4 +1,4 @@
-# Libraires needed
+# Required libraires, cacher inside HelperFuncs.py
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
