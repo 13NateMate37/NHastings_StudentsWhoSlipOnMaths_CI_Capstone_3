@@ -54,7 +54,7 @@ st.markdown("### Interpretation")
 
 st.write(
     """
-    Here was found a statistically significant, negative association, between previous fails in class
+    Here was found a statistically significant yet, negative association, between previous fails in class
     and an individuals final Mathematics grade.
 
     As the number of previous failures increases, the final grade tends to decrease.
@@ -69,7 +69,8 @@ st.markdown("### Business Insight")
 st.write(
     """
     Previous academic failures may be a useful indicator when identifying students
-    who could benefit from additional academic support. However, this factor should
+    who could benefit from additional academic support, with more failures indicating a 
+    higher likelyhood of needing support. However, this factor should
     not be used in isolation when making decisions about individual students.
     """
 )
