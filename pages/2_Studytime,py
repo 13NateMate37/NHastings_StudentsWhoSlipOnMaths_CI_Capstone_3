@@ -1,9 +1,10 @@
+# Libraires needed
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
-
 from HelperFuncs import loadDataframe
 
+# Load the cached dataframe
 df = loadDataframe()
 
 st.title("Study Time and Final Grade")
