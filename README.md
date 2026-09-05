@@ -83,7 +83,7 @@ H2 - Prior academic difficulty and final performance
 Validation:
 
 * boxplot comparing the previous failures with fial grade (G3)
-* Spearman RAnk coreelation test
+* Spearman Rank coreelation test
 * Statistical significance assessed using p < 0.05 
 
 H3 - Attendance impacts final performance
