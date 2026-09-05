@@ -1,0 +1,74 @@
+import streamlit as st
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from HelperFuncs import loadDataframe
+
+df = loadDataframe()
+
+st.title("Study Time and Final Grade")
+
+st.markdown("### Hypothesis 1")
+
+st.write(
+    """
+    Students who spend more time studying tend to achieve a higher final Mathematics grade.
+    """
+)
+
+st.markdown("### Visual Analysis")
+
+studytime_order = [
+    "< 2 hours",
+    "2 - 5 hours",
+    "5 - 10 hours",
+    "> 10 hours"
+]
+
+fig, ax = plt.subplots(figsize=(8, 5))
+
+sns.boxplot(
+    data=df,
+    x="studytime_label",
+    y="G3",
+    order=studytime_order,
+    ax=ax
+)
+
+ax.set_title("Final Grade Distribution by Study Time")
+ax.set_xlabel("Study Time in Hours per Week")
+ax.set_ylabel("Final Grade (G3)")
+
+st.pyplot(fig)
+
+st.markdown("### Statistical Test")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.metric(
+        label="Spearman's Rho",
+        value="0.105"
+    )
+
+with col2:
+    st.metric(
+        label="P-value",
+        value="0.0367"
+    )
+
+st.markdown("### Interpretation")
+
+st.write(
+    """
+    The result being there is an associated statistical significance but it
+    is a very weak, positive association.
+
+    The positive Spearman correlation suggests that grades tend to increase
+    slightly as study time increases butthe strength of the relationship
+    is very weak. Making study time alone, not a strong indicator of final
+    academic performance.
+
+    As the p-value is below 0.05, Hypothesis 1 is supported.
+    """
+)
