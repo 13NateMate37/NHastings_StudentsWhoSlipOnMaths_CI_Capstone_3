@@ -78,7 +78,7 @@ Validation:
 
 H2 - Prior academic difficulty and final performance
 
-* Students with prior fails tend to be achieving lower final mathematics grades thans students who do not.
+* Students with prior fails tend to be achieving lower final mathematics grades thans students who are not failing.
 
 Validation:
 
