@@ -55,7 +55,7 @@ st.markdown("### Interpretation")
 st.write(
     """
     Here was found a statistically significant, negative association, between previous fails in class
-    and the individuals final Mathematics grade.
+    and an individuals final Mathematics grade.
 
     As the number of previous failures increases, the final grade tends to decrease.
     The relationship is stronger than the relationship found for study time.
